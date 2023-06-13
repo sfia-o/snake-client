@@ -18,14 +18,15 @@ const connect = function() {
 
   conn.on('connect', () => {
     conn.write('Name: SVO')
+
   });
-  
+
   return conn;
 };
-
-
 
 console.log('Connecting...');
 connect();
 
-module.exports = connect;
+module.exports = {
+  connect
+}
