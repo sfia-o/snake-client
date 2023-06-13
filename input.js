@@ -1,17 +1,6 @@
+const {messages, moves} = require('./constants')
+
 let connection;
-
-const moves = {
-  'w': 'Move: up',
-  'a': 'Move: left',
-  's': 'Move: down',
-  'd': 'Move: right'
-};
-
-const message = {
-  'q': 'Say: Get out of my way!!',
-  'e': 'Say: That is my pixel!',
-  'z': 'Say: Well played!'
-};
 
 const handleUserInput = function(key) {
 
@@ -19,8 +8,8 @@ const handleUserInput = function(key) {
     process.exit();
   }
 
-  if (message.hasOwnProperty(key)) {
-    connection.write(message[key]);
+  if (messages.hasOwnProperty(key)) {
+    connection.write(messages[key]);
   }
 
   if (moves.hasOwnProperty(key)) {
