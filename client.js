@@ -12,9 +12,18 @@ const connect = function() {
     console.log(data);
   });
 
-  return conn;
+  conn.on('connected', () => {
+  console.log('Successfully connected to game server');
+  });
+
+  conn.on('connect', () => {
+    conn.write('Name: SVO')
+  });
   
+  return conn;
 };
+
+
 
 console.log('Connecting...');
 connect();
