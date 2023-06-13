@@ -1,36 +1,30 @@
 let connection;
 
+const moves = {
+  'w': 'Move: up',
+  'a': 'Move: left',
+  's': 'Move: down',
+  'd': 'Move: right'
+};
+
+const message = {
+  'q': 'Say: Get out of my way!!',
+  'e': 'Say: That is my pixel!',
+  'z': 'Say: Well played!'
+};
+
 const handleUserInput = function(key) {
+
   if (key === '\u0003') {
     process.exit();
-  };
-
-  if (key === 'w') {
-    connection.write('Move: up');
   }
 
-  if (key === 'a') {
-    connection.write('Move: left');
+  if (message.hasOwnProperty(key)) {
+    connection.write(message[key]);
   }
 
-  if (key === 's') {
-    connection.write('Move: down');
-  }
-
-  if (key === 'd') {
-    connection.write('Move: right');
-  }
-
-  if (key === 'q') {
-    connection.write('Say: Get out of my way!!')
-  }
-
-  if (key === 'e') {
-    connection.write('Say: That is my pixel!')
-  }
-
-  if (key === 'z') {
-    connection.write('Say: Well played!')
+  if (moves.hasOwnProperty(key)) {
+    connection.write(moves[key]);
   }
 };
 
