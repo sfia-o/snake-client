@@ -19,5 +19,5 @@ module.exports = {
   PORT,
   moves,
   messages
-}
+};
 
