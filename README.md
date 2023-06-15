@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["Screenshot of snake game in action, captured moment of message sent by player"](file:///home/sfos/Pictures/Screenshots/Screenshot%20from%202023-06-16%2016-53-00.png)
+!["Screenshot of snake game in action, captured moment of message sent by player"](https://github.com/sfia-o/snake-client/blob/master/snake-messageScreenshot.png)
 
 
 
