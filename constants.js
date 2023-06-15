@@ -9,9 +9,9 @@ const moves = {
 };
 
 const messages = {
-  'q': 'Say: Get out of my way!!',
-  'e': 'Say: That is my pixel!',
-  'z': 'Say: Well played!'
+  'j': 'Say: Get out of my way!!',
+  'k': 'Say: That is my pixel!',
+  'l': 'Say: Well played!'
 };
 
 module.exports = {
