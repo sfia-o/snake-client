@@ -21,7 +21,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## How to Play
 
-- Use the W A S D keys to command the snake up, down, left or right.
-- Use J K L to send short messages to other players.
+- Use the `W A S D` keys to command the snake up, down, left or right.
+- Use `J K L` to send short messages to other players.
 - Eat the red dot to gain points and grow, but remember to not hit the walls, yourself or the other player.
 - When you're done press `CTRL` + `C` to exit.
