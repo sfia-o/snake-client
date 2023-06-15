@@ -1,4 +1,4 @@
-const {messages, moves} = require('./constants')
+const {messages, moves} = require('./constants');
 
 let connection;
 
@@ -8,11 +8,11 @@ const handleUserInput = function(key) {
     process.exit();
   }
 
-  if (messages.hasOwnProperty(key)) {
+  if (Object.prototype.hasOwnProperty.call(messages, key)) {
     connection.write(messages[key]);
   }
 
-  if (moves.hasOwnProperty(key)) {
+  if (Object.prototype.hasOwnProperty.call(moves, key)) {
     connection.write(moves[key]);
   }
 };
@@ -26,8 +26,6 @@ const setupInput = function(conn) {
   stdin.on('data', handleUserInput);
   return stdin;
 };
-
-
 
 module.exports = {
   setupInput
